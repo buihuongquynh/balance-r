@@ -922,3 +922,32 @@ h2.invisible {
 {
   transform: none;
 }
+.team-member img{
+  width: 100%;
+  height: auto;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+.team-member{
+  text-align: center;
+}
+.team-member h4{
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.team-member p {
+  margin: 10px;
+  font-size: 18px;
+}
+.btn-social {
+  height: 2.3rem;
+  width: 2.3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
+}
+.text-ft{
+  text-align: center;
+  padding-bottom: 30px;
+}
