@@ -888,8 +888,8 @@ h2.invisible {
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-#menu .level-1{
-  margin-left: 25px;
+#menu .level-1 a{
+  padding: 0.7rem 1.6rem;
 }
 #menu > nav a:not(.logo):hover {
   background: rgba(255, 255, 255, 0.3);
