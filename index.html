@@ -46,12 +46,33 @@
 <meta name="theme-color" content="#ffffff" />
 
 <body itemscope itemtype="http://schema.org/WebApplication">
+  <div class="humberger">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu" class="main">
+        <nav class="fixed">
+          <a class="logo" href="#"><img src="images/new-logo-icon.svg" alt="balance-r"></a>
+          <div class="level-0"><a href="#profile">自己紹介</a></div>
+          <div class="level-0"><a href="#system">自作Webシステム</a>
 
+            <div class="level-1"><a href="#system-feature"><div style="margin-left: 10px;">特徴</div> </a></div>
+            <div class="level-1"><a href="#system-demo"> <div style="margin-left: 10px;">デモ環境</div> </a></div>
+
+          </div>
+          <div class="level-0"><a href="#results" class="current">実績</a></div>
+          <div class="level-0"><a href="#contact" class="">お問い合わせ</a></div>
+        </nav>
+      </ul>
+    </div>
+  </div>
   <header>
-
+   
     <div class="content">
       <div class="header-top">
-        <div class="humberger">
+        <!-- <div class="humberger">
           <div id="menuToggle">
             <input type="checkbox" />
             <span></span>
@@ -63,8 +84,8 @@
                 <div class="level-0"><a href="#profile">自己紹介</a></div>
                 <div class="level-0"><a href="#system">自作Webシステム</a>
 
-                  <div class="level-1"><a href="#system-feature">特徴</a></div>
-                  <div class="level-1"><a href="#system-demo">デモ環境</a></div>
+                  <div class="level-1"><a href="#system-feature"><div style="margin-left: 10px;">特徴</div> </a></div>
+                  <div class="level-1"><a href="#system-demo"> <div style="margin-left: 10px;">デモ環境</div> </a></div>
 
                 </div>
                 <div class="level-0"><a href="#results" class="current">実績</a></div>
@@ -72,7 +93,7 @@
               </nav>
             </ul>
           </div>
-        </div>
+        </div> -->
         <h1>
           <img itemprop="image" itemprop="image" src="images/new-logo.svg" alt="balance-r" />
         </h1>
@@ -383,8 +404,9 @@
     <section>
       <img class="logo" src="images/new-logo-white.svg" alt="balance-r" />
     </section>
-    <section>
-      <p class="text-ft">Copyright © 2022 BALANCE-R rights reserved.</p>
-    </section>
+    
   </footer>
+  <section class="footer_bottom">
+    <p class="text-ft">Copyright © 2022 BALANCE-R rights reserved.</p>
+  </section>
 </body>

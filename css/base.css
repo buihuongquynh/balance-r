@@ -426,16 +426,21 @@ blockquote a {
   border-bottom: 1px solid #0087F7;
 }
 body > header {
+  background-image: url('../images/backgroud.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; 
   position: relative;
-  padding: 2.8rem 1.4rem;
+  padding: 1.5rem 1.4rem 2.8rem 1.4rem;
   z-index: 10;
 }
 body > header .content {
   opacity: 1;
-  background: #F3F4F5;
+  /* background: #F3F4F5; */
   z-index: 10;
 }
 body > header .content > * {
+  color: white !important;
   max-width: 700px;
 }
 body > header .content h1 {
@@ -480,6 +485,7 @@ body > header .scroll-first a span {
  }
 }
 body > header .content h2 {
+  color: white;
   font-size: 1.15em;
   line-height: 1.4em;
 }
@@ -506,6 +512,7 @@ body > header .content h2 {
       width: 700px;
  }
   body > header .content > * {
+    color: white;
       max-width: 900px;
  }
   body > header h2 {
@@ -576,6 +583,9 @@ main > nav .level-1 > a {
 @media (max-width: 939px) {
   .humberger{
     display: block !important;
+  }
+  body > header .content h1{
+    margin-left: 60px;
   }
 }
 @media (min-width: 940px) {
@@ -696,6 +706,17 @@ main table span {
       display: none;
  }
 }
+.footer_bottom{
+  background: #2D3038;
+  border-top: 1px solid;
+  padding-top: 20px;
+  z-index: 5000;
+  display: block;
+  position: relative;
+}
+.footer_bottom p{
+  margin: 0;
+}
 footer {
   background: #2D3038;
   z-index: 5000;
@@ -794,11 +815,10 @@ h2.invisible {
 }
 
 .humberger {
-  /* Toggle Functionality */
-  /* Toggle Button */
-  /* Menu */
-  /* Dummy Content */
-  /*# sourceMappingURL=style.css.map */
+  position: fixed;
+  z-index: 999999;
+  top: 39px;
+  left: 40px;
   display: none;
   margin-bottom: 2.8rem;
   margin-right: 20px;
@@ -820,6 +840,7 @@ h2.invisible {
 #menu nav{
   display: block !important;
   margin-left: 20px;
+  margin-top: 90px;
 }
 #menuToggle input
 {
@@ -839,7 +860,7 @@ h2.invisible {
   height: 2px;
   margin-bottom: 5px;
   position: relative;
-  background: #000080;
+  background: white;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 5px 0px;
@@ -862,7 +883,7 @@ h2.invisible {
 {
   opacity: 1;
   transform: rotate(45deg) translate(-3px, -1px);
-  background: #36383F;
+  background: white;
 }
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
@@ -878,10 +899,10 @@ h2.invisible {
 #menu
 {
   position: absolute;
+  top: -39px;
+  left: -40px;
   width: 220px;
   height: 100vh;
-  margin: -50px 0 0 -50px;
-  padding-top: 80px;
   background-color: #028AF4;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
